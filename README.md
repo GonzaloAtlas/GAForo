@@ -2,6 +2,13 @@
 
 Este proyecto forma parte de los desafíos asignados en la ruta de especialización para Backend del programa **ONE (Oracle Next Education)**. El objetivo del challenge es crear un foro donde los participantes de la plataforma puedan publicar temas sobre determinados asuntos. La finalidad es consolidar conocimientos sobre cómo funciona internamente un foro, incluyendo el almacenamiento y manejo de datos, así como la relación entre los tópicos, respuestas y usuarios.
 
+## Descripción del Proyecto
+
+El objetivo principal del challenge es consolidar conocimientos sobre cómo funciona un foro a nivel backend:
+- Cómo se almacenan los datos.
+- Cómo se relacionan los datos (tópicos, respuestas y usuarios).
+- Cómo se gestiona la autenticación y autorización.
+
 ## Tecnologías utilizadas
 
 ### Configuración del entorno de desarrollo:
@@ -10,6 +17,7 @@ Este proyecto forma parte de los desafíos asignados en la ruta de especializaci
 - **Maven**: Versión 4 (utilizada por Spring Initializr)
 - **Spring Boot**
 - **MySQL**: Versión 8 en adelante
+- **Insomnia**: Para realizar pruebas de consumo de la API.
 
 ### Dependencias:
 
@@ -50,3 +58,47 @@ El modelo de datos para este foro incluye las siguientes entidades y relaciones:
   - Un **usuario** puede tener múltiples **respuestas**.
   - Un **tópico** puede tener múltiples **respuestas** asociadas.
   - Las **respuestas** se relacionan con un **usuario** y un **tópico** específico.
+
+## Instalación y Configuración
+
+1. **Clonar el Repositorio:**
+   ```bash
+   git clone <https://github.com/GonzaloAtlas/GAForo.git>
+   cd <GAForo>
+   ```
+
+2. **Configurar la Base de Datos:**
+   - Asegúrate de tener MySQL 8 o superior instalado.
+   - Crea una base de datos con el nombre `gaforo` (o el que definas en tu archivo `application.properties`).
+   - Actualiza el archivo `src/main/resources/application.properties` con las credenciales de tu base de datos.
+   
+   ```properties
+   spring.datasource.url=jdbc:mysql://localhost:3306/nombre=_de_la_base_de_datos
+   spring.datasource.username=tu_usuario
+   spring.datasource.password=tu_contraseña
+   spring.jpa.hibernate.ddl-auto=validate
+   spring.flyway.enabled=true
+   ```
+
+## Uso de la API
+
+Las rutas principales del foro incluyen:
+- **Tópicos**:
+  - `GET /topicos`: Listar todos los tópicos.
+  - `POST /topicos`: Crear un nuevo tópico.
+  - `PUT /topicos/{id}`: Actualizar un tópico.
+  - `DELETE /topicos/{id}`: Eliminar un tópico.
+- **Autenticación**:
+  - `POST /login`: Generar un JWT para autenticación.
+
+## Contribución
+
+1. Realiza un fork del repositorio.
+2. Crea una nueva rama con tu mejora o corrección.
+   ```bash
+   git checkout -b feature/nueva-funcionalidad
+   ```
+3. Envía un pull request describiendo los cambios realizados.
+
+## Contacto
+Si tienes dudas o sugerencias, no dudes en contactarme.
