@@ -1,4 +1,4 @@
-# Challenge - Foro Backend
+# GAForo
 
 Este proyecto forma parte de los desafíos asignados en la ruta de especialización para Backend del programa **ONE (Oracle Next Education)**. El objetivo del challenge es crear un foro donde los participantes de la plataforma puedan publicar temas sobre determinados asuntos. La finalidad es consolidar conocimientos sobre cómo funciona internamente un foro, incluyendo el almacenamiento y manejo de datos, así como la relación entre los tópicos, respuestas y usuarios.
 
