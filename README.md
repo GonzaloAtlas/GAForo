@@ -4,10 +4,10 @@ Este proyecto forma parte de los desafíos asignados en la ruta de especializaci
 
 ## Descripción del Proyecto
 
-El objetivo principal del challenge es consolidar conocimientos sobre cómo funciona un foro a nivel backend:
-- Cómo se almacenan los datos.
-- Cómo se relacionan los datos (tópicos, respuestas y usuarios).
-- Cómo se gestiona la autenticación y autorización.
+El objetivo principal del challenge es consolidar conocimientos sobre cómo funciona un foro a nivel backend, respondiendo a preguntas como:
+- ¿Cómo se almacenan los dato?
+- ¿Cómo se relacionan los datos? (tópicos, respuestas y usuarios).
+- ¿Cómo se gestiona la autenticación y autorización?
 
 ## Tecnologías utilizadas
 
